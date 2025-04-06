@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FinSight</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!--Landing Section-->
+  <section class="hero text-center d-flex align-items-center justify-content-center">
+    <div class="container">
+      <h1>Welcome to FinSight</h1>
+      <h2>Track effortlessly the current values of 9 S&P500 companies and 6 Cryptocurrencies</h2>
+      <div class="mt-4">
+        <a href="#stock-tracker" class="btn btn-primary me-2">Track Stocks</a>
+        <a href="#crypto-tracker" class="btn btn-outline-light">Track Cryptocurrencies</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tracker Section for Stocks -->
+  <section id="stock-tracker" class="py-5">
+    <div class="container">
+      <h3 class="mb-4">Live Market Tracker</h3>
+      <div class="scrollbox" id="scrollbox1">
+        <div id="stock-prices" class="prices">
+          <!-- Stock Cards will be inserted here -->
+        </div>
+      </div>
+    </div>
+    <h6><br><br>Due to source inconsistencies, some stocks might not show up.<br>In that case refresh as many times as needed.</h6>
+  </section>
+
+  <!-- Tracker Section for Cryptos -->
+  <section id="crypto-tracker" class="py-5">
+    <div class="container">
+      <h3 class="mb-4">Live Crypto Tracker</h3>
+      <div class="scrollbox" id="scrollbox2">
+        <div id="crypto-prices" class="prices">
+          <!-- Crypto Cards will be inserted here -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Stamatogiannis Leonidas. All rights reserved.</p>
+    <a href="https://stmgleonidas.github.io/website/"><p>My website is here. Take a look</p></a>
+    <p>Website purpose: Getting familiar with js.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
